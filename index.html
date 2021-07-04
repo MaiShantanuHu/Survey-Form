@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div id="header">
+		<h1>Alumni Survey Form</h1>
+		<p id="description">Xavier Institute of Engineering</p>
+	</div>
+	<form id="survey-form">
+		
+		<label for="Firstname" id="name_label">First Name:</label><br>
+		<input type="text"  placeholder="Enter your Firstname" id="Firstname" class="box"><br>
+		
+		<label for="Lastname" id="lname_label">Last Name:</label><br>
+		<input type="text"  placeholder="Enter your Lastname"id="Lastname" class="box" class="label"><br>
+		
+		<label for="email" id="email_label">Email:</label><br>
+		<input type="email"  placeholder="Enter your Email" id="email" class="box" class="label"><br>
+		
+		<label for="contact" id="contact_label">Contact:</label><br>
+		<input type="tel"  placeholder="Enter your contact" id="contact" pattern="[0-9]{10}" class="box" class="label"><br>
+		
+		<label for="dob" id="dob_label">Date of Birth:</label><br>
+		<input type="Date"  placeholder="Enter your Date of Birth" id="dob" class="box" class="label"><br>
+		
+		<label for="branch" id="branch_label">Choose your branch</label><br>
+		<select id="branch" name="department" class="box">
+			<option disabled selected value>---Select an option---</option>
+			<option value="EXTC">EXTC</option>
+			<option value="Comps">Comps</option>
+			<option value="IT">IT</option>
+		</select><br>
+
+		<fieldset class="field-style">
+			<legend class="label2">What is your level of satisfaction for this event</legend>
+
+			<input type="radio" name="ques1" id="Excellent" value="Excellent">
+			<label for="Excellent">Excellent</label><br>
+			<input type="radio" name="ques1" id="Good" value="Good">
+			<label for="Good">Good</label><br>
+			<input type="radio" name="ques1" id="Ok" value="Ok">
+			<label for="Ok">Ok</label><br>
+
+		</fieldset><br>
+
+		<fieldset>
+			<legend class="label2">Which part of the event did you like the most</legend>
+
+			<input type="radio" name="ques2" id="guest" value="guest">
+			<label for="guest">Guest</label><br>
+			<input type="radio" name="ques2" id="quiz" value="quiz">
+			<label for="quiz">Quiz</label><br>
+			<input type="radio" name="ques2" id="faq" value="faq">
+			<label for="quiz">FAQ</label><br>
+			<input type="radio" name="ques2" id="handonprac" value="handonprac">
+			<label for="handonprac">Hands on Practice</label>
+		</fieldset><br>
+
+		<fieldset>
+			<legend class="label2">Are you likely to participate in one of our events in the future?</legend>
+
+			<input type="radio" name="ques3" id="yes" value="yes" >
+			<label for="yes">Yes</label><br>
+			<input type="radio" name="ques3" id="no" value="no">
+			<label for="no">No</label><br>
+		</fieldset><br>
+
+		<fieldset>
+			<legend class="label2">How likely are you to tell a friend about this event?</legend>
+
+			<input type="radio" name="ques4" id="most likely" value="most likely">
+			<label for="most likely">Most Likely</label><br>
+			<input type="radio" name="ques4" id="not sure" value="not sure">
+			<label for="not sure">Not sure</label><br>
+			<input type="radio" name="ques4" id="nope" value="nope">
+			<label for="nope">Nope</label><br>
+		</fieldset><br>
+
+		<fieldset>
+			<legend class="label2">Recommend Future Events</legend>
+
+			<input type="checkbox" name="ques5" id="placement" value="placement">
+			<label for="placement">Placement</label><br>
+			<input type="checkbox" name="ques" id="higher studies" value="higher studies">
+			<label for="higher studies">Higher Studies</label><br>
+			<input type="checkbox" name="ques5" id="startup" value="startup">
+			<label for="startup">Startup</label><br>
+		</fieldset><br>
+
+		<label for="Suggestions">Any Suggestions</label><br>
+		<textarea id="Suggestions" name="text" rows="8" cols="60" class="box"> </textarea><br>
+		
+		<input type="submit" name="" id="submit">
+		<input type="reset" name="" id="reset">
+
+		<div id="footer">
+			<p>Created by <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJ09-ujKoVcNeejMHv1AC5sHm6llHzMA2vg&usqp=CAU">Shantanu Chhailkar</a></p>
+		</div>
+</body>
+</html>
